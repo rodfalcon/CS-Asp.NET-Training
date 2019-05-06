@@ -1,0 +1,17 @@
+﻿@page
+@model WebApplication1.Pages.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<p>Coloque o Nome: </p>
+
+
+<form method="POST">
+  
+    <div> Nome: <input asp-for="cliente.Nome" /></div>
+    <div> CPF:  <input asp-for="cliente.CPF" /></div>
+    <input type="submit" />
+</form>
